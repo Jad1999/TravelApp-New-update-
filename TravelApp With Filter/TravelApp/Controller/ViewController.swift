@@ -230,8 +230,10 @@ extension ViewController: UITableViewDelegate{
                 destinationVC.selectedCell = filterMountain[indexPath.row]
             }else if forestFilter == true {
                 destinationVC.selectedCell = filterForest[indexPath.row]
-            }else{
+            }else if isSearching == true{
                 destinationVC.selectedCell = filterInfo[indexPath.row]
+            }else{
+                destinationVC.selectedCell = info[indexPath.row]
             }
             
           
